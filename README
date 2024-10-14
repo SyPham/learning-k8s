@@ -1,0 +1,4 @@
+# Xóa PV, PVC thủ công
+`kubectl patch pv <pv-name> -p '{"metadata":{"finalizers":null}}'`
+# Kiểm tra log nfs
+`dmesg | grep nfs`
